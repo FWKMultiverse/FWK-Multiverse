@@ -6,131 +6,131 @@
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![AI](https://img.shields.io/badge/AI-Cutting--Edge-green)
 
-ยินดีต้อนรับครับ! ผมเป็นนักพัฒนา AI วัย 16 ปีที่เรียนรู้ด้วยตัวเองและมีความหลงใหลในการสร้างระบบอัจฉริยะที่ซับซ้อนขึ้นมาตั้งแต่ต้น พอร์ตโฟลิโอนี้เป็นเหมือนเวทีที่จัดแสดงโปรเจกต์ของผมในระดับสูง ทั้งในด้าน **ระบบเทรดอัตโนมัติ**, **การแข่งขันวิทยาศาสตร์ข้อมูล** และ **การสร้าง AI สำหรับพัฒนาเกม** แต่ละโปรเจกต์ถูกสร้างขึ้นใหม่ทั้งหมด (from scratch) เพื่อผลักดันขีดจำกัดของสิ่งที่ AI ยุคใหม่สามารถทำได้
+Welcome! I'm a 16-year-old self-taught AI developer with a passion for building complex, intelligent systems from the ground up. This repository is a high-level showcase of my projects in **automated financial trading**, **competitive data science**, and **generative AI for game development**. Each project was built from scratch, pushing the limits of what can be achieved with modern AI.
 
-> ⚠️ **หมายเหตุสำคัญ:** พอร์ตโฟลิโอนี้มีไว้เพื่อการสาธิตและให้ข้อมูลภาพรวมในระดับสูงเท่านั้น **ไม่มีการเปิดเผยซอร์สโค้ด** หรือไฟล์การใช้งานใดๆ ในที่นี้ อย่างไรก็ตาม ผมวางแผนที่จะแบ่งปันโค้ดบางส่วนหรือโปรเจกต์อื่นๆ **ให้ใช้งานได้ฟรีในอนาคต** ในขณะที่ผมยังคงพัฒนาต่อไป
-
----
-
-## 1️⃣ Project Phoenix: ระบบ AI เทรดที่ทนทานต่อทุกสภาวะ (พัฒนาใน 28 วัน)
-
-**ระดับ:** Professional / Production-Grade
-**เทคโนโลยีหลัก:** Python, Multi-Agent RL, Transformers, GNN, XAI, Flask, Async I/O
-
-**Project Phoenix** คือผลงานชิ้นแรกที่ผมสร้างขึ้นอย่างเต็มรูปแบบ: มันคือเฟรมเวิร์กการเทรดอัตโนมัติที่ล้ำสมัยซึ่งถูกออกแบบมาเพื่อพิชิตความวุ่นวายของตลาด Forex และ Crypto นี่ไม่ใช่แค่บอทเทรดธรรมดา แต่คือระบบนิเวศที่สมบูรณ์แบบสำหรับการทำงานตลอด 24 ชั่วโมง 7 วันต่อสัปดาห์ ด้วยทีม AI Agents ที่ทำหน้าที่วิเคราะห์, ตัดสินใจ และลงมือปฏิบัติด้วยความเร็วและความอัจฉริยะอันน่าทึ่ง
-
-**คุณสมบัติและนวัตกรรมหลัก:**
-- **🧠 สมองของ AI (`AIEngine.py`):** หัวใจหลักคือเอ็นจิ้นอันซับซ้อนที่บรรจุ **8 โครงข่ายประสาทเทียม** ที่ทำงานร่วมกันอย่างกลมกลืน โมเดลเหล่านี้ทำนายการเคลื่อนไหวของตลาด, บริหารความเสี่ยง, และทำความเข้าใจข่าวการเงินที่ซับซ้อนและความสัมพันธ์ระหว่างตลาดด้วยการใช้ Graph Neural Networks (GNNs)
-- **🤖 ระบบ AI Agents ที่ทำงานร่วมกัน:** กลุ่ม AI Agents 3 ตัวที่เชี่ยวชาญทำงานเป็นทีม:
-  - **Macro Agent:** นักกลยุทธ์ที่วิเคราะห์แนวโน้มระยะยาวและข้อมูลความรู้สึกจากข่าวทั่วโลก
-  - **Micro Agent:** นักยุทธวิธีที่ลงมือเทรดด้วยความถี่สูงโดยใช้โมเดล Transformer ที่ล้ำสมัย
-  - **Risk Agent:** ผู้พิทักษ์ที่ปรับขนาดการเทรดแบบไดนามิกและจัดการความเสี่ยงเพื่อปกป้องเงินทุน
-- **📡 กระดูกสันหลังของข้อมูล (`fetcher.py`):** ตัวรวบรวมข้อมูลแบบ asynchronous ที่ทนทานอย่างเหลือเชื่อ ซึ่งดึงข้อมูลจากหลาย API พร้อมกัน มันถูกออกแบบมาให้ "ทนทานต่อความล้มเหลว" ด้วยระบบ retry, rate limiting และ failover ที่ติดตั้งมาในตัว เพื่อให้แน่ใจว่าจะมีข้อมูลไหลเข้ามาอย่างต่อเนื่องแม้แหล่งข้อมูลจะล้มเหลวก็ตาม
-- **⚙️ ศูนย์บัญชาการ (`AIServer.py`):** Flask server ระดับ production-grade ที่ทำหน้าที่เป็นศูนย์กลางของระบบ มันจัดการคำขอ API, ควบคุมสถานะของระบบ, และประมวลผลงานหนักๆ ในเบื้องหลังโดยไม่มีการค้าง ทำให้ระบบตอบสนองได้ตลอดเวลา
+> ⚠️ **Important Note:** This portfolio is for demonstration purposes and provides **high-level overviews only**. No source code or implementation files are shared here as these projects are under active development. However, I plan to make some features or projects **partially available for free in the future** as I continue to build them from the ground up.
 
 ---
 
-## 2️⃣ Project Chimera: เฟรมเวิร์กสำหรับแข่งขัน Numerai (พัฒนาใน 6 วัน)
+## 1️⃣ Project Phoenix: A Resilient AI Trading System (Built in 28 Days)
 
-**ระดับ:** Expert / Research-Grade
-**เทคโนโลยีหลัก:** Python, Ensemble Modeling (LightGBM, CatBoost), LSTM, GNN+Transformer, MARL, Adversarial Validation
+**Level:** Professional / Production-Grade  
+**Core Tech:** Python, Multi-Agent RL, Transformers, GNN, XAI, Flask, Async I/O
 
-**Project Chimera** คือเฟรมเวิร์กที่ล้ำสมัยสุดๆ ซึ่งสร้างขึ้นเพื่อรับมือกับการแข่งขัน Numerai ที่ยากมาก โปรเจกต์นี้เป็นข้อพิสูจน์ถึงความสามารถในการพัฒนาที่รวดเร็วและการสร้างโมเดลที่ซับซ้อน โดยสร้างชุดโมเดลที่ทรงพลังซึ่งผสมผสาน **โมเดล AI ที่หลากหลายถึง 10 ตัว** เข้าด้วยกัน เพื่อค้นหาสัญญาณที่ซ่อนอยู่ในข้อมูลทางการเงินที่เข้ารหัส
+**Project Phoenix** is my first full-scale creation: an advanced automated trading framework engineered to conquer the chaotic Forex and Crypto markets. This isn't just a trading bot; it's a complete ecosystem designed for 24/7 operation, featuring a team of AI agents that analyze, decide, and act with incredible speed and intelligence.
 
-**จุดเด่นทางสถาปัตยกรรม:**
-- **🐲 การประสานของ 10 โมเดล:** นี่ไม่ใช่แค่โมเดลเดียว แต่มันคือวงออร์เคสตราที่รวมเอาข้อดีของ Gradient Boosting machines (LightGBM, CatBoost), Deep Learning สำหรับ Time-series (LSTM), GNN+Transformer แบบผสมผสานสำหรับข้อมูลเชิงโครงสร้าง และแม้กระทั่งระบบ Multi-Agent Reinforcement Learning
-- **🛡️ Adversarial Validation:** คุณสมบัติสำคัญที่รับประกันความทนทาน ระบบจะฝึกโมเดลให้แยกแยะระหว่างข้อมูลฝึกและข้อมูลจริง จากนั้นจะเลือกเฉพาะคุณสมบัติที่เสถียรเมื่อเวลาผ่านไป ซึ่งช่วยป้องกันการ overfitting และทำให้การคาดการณ์น่าเชื่อถือยิ่งขึ้นในโลกจริง
-- **⏳ การฝึกแบบคำนึงถึงเวลา:** ใช้เทคนิคระดับมืออาชีพ เช่น การประมวลผลล่วงหน้าแบบแบ่งยุค (era-based preprocessing) และการฝึกแบบเดินหน้า (walk-forward training) เพื่อให้แน่ใจว่าโมเดลเรียนรู้จากอดีตโดยไม่มีการ 'แอบดู' อนาคต
-- **🔧 ชุดเครื่องมือแบบ End-to-End:** มาพร้อมกับตัวแปลงข้อมูลแบบกำหนดเอง (`data_converter.py`) และสคริปต์การประเมินผลหลังการส่งผลงาน (`CSVP.py`) เพื่อวัดประสิทธิภาพด้วยเมตริกอย่าง Correlation และ MMC
-
----
-
-## 3️⃣ Project Genesis: ฝูง AI นักพัฒนาเกม (พัฒนาใน 8 วัน)
-
-**ระดับ:** Advanced R&D / Cutting-Edge
-**เทคโนโลยีหลัก:** Python, PPO-RL, Quantized LLMs, LoRA, GNN, RAG, Multi-Agent Systems
-
-**Project Genesis** คือผลงานที่ทะเยอทะยานที่สุดของผม—มันคือ **ฝูง AI Agents ที่ทำงานร่วมกันเพื่อการพัฒนาเกมแบบ End-to-End** ระบบนี้สามารถเปลี่ยนไอเดียง่ายๆ ให้กลายเป็นโค้ดที่ใช้งานได้จริง มีเอกสารกำกับ และผ่านการทดสอบ บนหลายๆ Game Engine เช่น Roblox, Godot, Unity, และ Unreal
-
-**ฝูง AI นี้ทำอะไรได้บ้าง?**
-- **💡 เสนอแนวคิดเกมใหม่ๆ:** AI Agent ที่เป็น Game Designer สามารถระดมสมองและสรุปคุณสมบัติใหม่ๆ ที่สร้างสรรค์
-- **💻 เขียน, แก้ไข, และปรับปรุงโค้ด:** Agents หลักจะสร้างโค้ดขึ้นมา, AI นักวิจารณ์จะทำการตรวจสอบ, AI นักปรับปรุงจะทำการปรับปรุงให้ดีขึ้น และ AI ผู้รายงานข้อผิดพลาดจะวิเคราะห์ข้อผิดพลาดเพื่อนำทางกระบวนการทั้งหมด
-- **🧪 สร้างการทดสอบและเอกสารกำกับโค้ดอัตโนมัติ:** Agents ที่เชี่ยวชาญจะสร้าง Unit Test เพื่อรับประกันคุณภาพโค้ด และเขียนเอกสารที่อ่านเข้าใจง่ายสำหรับมนุษย์
-- **🧠 เรียนรู้และวิวัฒนาการ:** ระบบทั้งหมดพัฒนาตัวเองไปเรื่อยๆ ด้วย Proximal Policy Optimization (PPO), ซึ่งเป็นอัลกอริทึม Reinforcement Learning ที่ทรงพลัง และยังสามารถจำลองการได้รับ feedback จากมนุษย์ได้อีกด้วย
-
-**เทคโนโลยีเบื้องหลังความมหัศจรรย์:**
-- **Foundation LLM:** ใช้โมเดล `CodeGen-2B` ที่ถูก Fine-tuned ด้วยเทคนิค **LoRA** และทำงานได้อย่างมีประสิทธิภาพด้วย **4-bit quantization** เพื่อให้สามารถรันบนฮาร์ดแวร์ทั่วไปได้
-- **Code Knowledge Graph (GNN):** ระบบนี้ไม่ได้แค่อ่านโค้ดเป็นข้อความ แต่ยังสร้างกราฟเพื่อทำความเข้าใจความสัมพันธ์เชิงโครงสร้างระหว่างฟังก์ชัน, ไฟล์, และ Assets
-- **Retrieval-Augmented Generation (RAG):** Agents ทุกตัวมีหน่วยความจำระยะยาวร่วมกัน พวกมันสามารถดึงโค้ดที่เคยประสบความสำเร็จในอดีตมาใช้เพื่อแก้ปัญหาที่ซับซ้อนใหม่ๆ ได้อย่างมีประสิทธิภาพมากขึ้น
-- **ทีมพัฒนาดิจิทัลเต็มรูปแบบ:** มี **AI Agents ที่เชี่ยวชาญกว่า 10 ตัว** ทำงานร่วมกันในวงจรของการสร้าง, การประเมิน, และการปรับปรุง ซึ่งเลียนแบบทีมพัฒนาแบบ Agile ในโลกจริง
+**Key Features & Innovations:**
+- **🧠 The AI Brain (`AIEngine.py`):** At its core, a sophisticated engine housing **8 distinct neural networks**. These models work in concert to predict market movements, manage risk, and understand complex financial news and inter-market relationships using Graph Neural Networks (GNNs).
+- **🤖 Multi-Agent Collaborative System:** A trio of specialized agents work as a team:
+    - **Macro Agent:** The strategist, analyzing long-term trends and global news sentiment.
+    - **Micro Agent:** The tactician, executing high-frequency trades using a state-of-the-art Transformer model.
+    - **Risk Agent:** The guardian, dynamically adjusting trade sizes and managing risk to protect capital.
+- **📡 The Data Backbone (`fetcher.py`):** An incredibly robust, asynchronous data collector that pulls information from multiple APIs simultaneously. It's designed to be "anti-fragile," with built-in retries, rate limiting, and failover logic, ensuring a constant flow of data even when sources fail.
+- **⚙️ The Command Center (`AIServer.py`):** A production-grade Flask server that acts as the system's nerve center. It handles API requests, manages state, and processes heavy tasks in the background without ever freezing, ensuring the system is always responsive.
 
 ---
 
-## 🛠️ การจัดการระบบให้ทนทาน: เจาะลึกระบบจัดการข้อผิดพลาดของผม
+## 2️⃣ Project Chimera: A Numerai Competition Framework (Built in 6 Days)
 
-นอกเหนือจากการสร้างโมเดล AI แล้ว ผมยังให้ความสำคัญกับการสร้างระบบที่ **ยืดหยุ่น, เสถียร, และพร้อมใช้งานในระดับ Production** ซึ่งทำได้ด้วยชุดระบบที่สร้างขึ้นเองเพื่อจัดการกับความวุ่นวายในโลกจริง
+**Level:** Expert / Research-Grade  
+**Core Tech:** Python, Ensemble Modeling (LightGBM, CatBoost), LSTM, GNN+Transformer, MARL, Adversarial Validation
 
-### 🔥 Resilient Fetcher System
-- **ปัญหาทั่วไป:** API มักจะไม่มีความเสถียร อาจล่ม, ช้า หรือจำกัดการใช้งาน (rate limit)
-- **วิธีแก้ปัญหาของผม:** ระบบดึงข้อมูลแบบหลายชั้นที่คาดการณ์ความล้มเหลวไว้ล่วงหน้า โดยรวมเอา **Retry Mechanisms**, **Smart Rate Limiting**, **API Health Cooldowns**, และ **Two-Layer Caching** เข้าไว้ด้วยกัน
-- **ผลลัพธ์:** ระบบมีความทนทานอย่างเหลือเชื่อ หากแหล่งข้อมูลหลักล้มเหลว ก็จะสลับไปใช้แหล่งอื่นได้อย่างราบรื่น เพื่อให้ AI มีข้อมูลอยู่เสมอ
+**Project Chimera** is a hyper-advanced framework built specifically to tackle the notoriously difficult Numerai data science competition. This project is a testament to rapid development and sophisticated modeling, creating a powerful ensemble that blends **10 diverse AI models** to find hidden signals in encrypted financial data.
+
+**Architectural Highlights:**
+- **🐲 A Symphony of 10 Models:** This isn't just one model; it's an orchestra. It combines the strengths of Gradient Boosting machines (LightGBM, CatBoost), deep learning for time-series (LSTM), a hybrid GNN+Transformer for structural data, and even a Multi-Agent Reinforcement Learning system.
+- **🛡️ Adversarial Validation:** A key feature to ensure robustness. The system actively trains a model to distinguish between training and live data, then selects only the features that are stable over time. This prevents overfitting and makes the predictions more reliable in the real world.
+- **⏳ Chronologically-Sound Training:** Implements professional techniques like era-based preprocessing and walk-forward training, ensuring the models learn from the past without peeking into the future.
+- **🔧 End-to-End Toolkit:** Comes complete with custom data converters (`data_converter.py`) and a post-submission evaluation script (`CSVP.py`) to measure performance using official Numerai metrics like Correlation and MMC.
+
+---
+
+## 3️⃣ Project Genesis: An AI Game Development Swarm (Built in 8 Days)
+
+**Level:** Advanced R&D / Cutting-Edge  
+**Core Tech:** Python, PPO-RL, Quantized LLMs, LoRA, GNN, RAG, Multi-Agent Systems
+
+**Project Genesis** is my most ambitious creation—a **swarm of collaborative AI agents that can perform end-to-end game development**. This system can take a simple idea and turn it into functional, documented, and tested code across multiple game engines like Roblox, Godot, Unity, and Unreal.
+
+**What Can The Swarm Do?**
+- **💡 Propose Novel Game Mechanics:** A dedicated Game Designer agent can brainstorm and outline creative new features.
+- **💻 Write, Debug, and Refactor Code:** The core agents generate code, a critic reviews it, a refiner improves it, and a bug reporter analyzes errors to guide the process.
+- **🧪 Generate Tests and Documentation Automatically:** Specialized agents create unit tests to ensure code quality and write clear, human-readable documentation.
+- **🧠 Learn and Evolve:** The entire system improves over time using Proximal Policy Optimization (PPO), a powerful reinforcement learning algorithm, and even simulates human feedback.
+
+**The Tech Behind the Magic:**
+- **Foundation LLM:** A `CodeGen-2B` model, fine-tuned with **LoRA** and running efficiently with **4-bit quantization** to operate on consumer hardware.
+- **Code Knowledge Graph (GNN):** The system doesn't just read code as text; it builds a graph to understand the structural relationships between functions, files, and assets.
+- **Retrieval-Augmented Generation (RAG):** The agents possess a shared long-term memory. They can retrieve successful code snippets from past experiences to solve new, complex problems more effectively.
+- **A Full Digital Development Team:** Over **10 specialized agents** collaborate in a cycle of creation, evaluation, and refinement, mimicking a real-world agile development team.
+
+---
+
+## 🛠️ Engineering for Robustness: A Deep Dive into My Error Handling Systems
+
+Beyond just building AI models, I focus heavily on creating systems that are **resilient, stable, and production-ready**. This is achieved through a suite of custom-built systems designed to handle real-world chaos.
+
+### 🔥 The Resilient Fetcher System
+* **The Common Problem:** APIs are unreliable. They go down, get slow, or rate limit you.
+* **My Solution:** A multi-layered data fetching system that anticipates failure. It combines **Retry Mechanisms**, **Smart Rate Limiting**, **API Health Cooldowns**, and **Two-Layer Caching**.
+* **The Impact:** The system is incredibly resilient. If a primary data source fails, it seamlessly switches to another, ensuring the AI always has data. It's built to "never give up."
 
 ### ✨ Server State Management
-- **ปัญหาทั่วไป:** Server มักจะล่มหากได้รับคำขอก่อนที่มันจะพร้อม หรือในขณะที่กำลังทำงานสำคัญ
-- **วิธีแก้ปัญหาของผม:** ระบบจัดการสถานะที่แข็งแกร่งโดยใช้ **state flags** และ **Python decorators** เปรียบเหมือน "การ์ด" ดิจิทัลสำหรับ API ของผมที่คอยตรวจสอบสถานะของเซิร์ฟเวอร์ก่อนอนุญาตให้คำขอใดๆ ทำงานต่อ
-- **ผลลัพธ์:** Server ได้รับการป้องกันจากสถานะที่ไม่ถูกต้อง ป้องกันการล่มและรับรองความเสถียรสำหรับแอปพลิเคชันแบบ live
+* **The Common Problem:** A server crashes if it receives a request before it's ready or while it's busy with a critical task.
+* **My Solution:** A robust state management system using **state flags** and **Python decorators**. Think of it as a digital "bouncer" for my API that checks the server's status before allowing any request to proceed.
+* **The Impact:** The server is protected from invalid states, preventing crashes and ensuring stability for any live application.
 
 ### ⚡ Background Task Processing System
-- **ปัญหาทั่วไป:** งานหนักๆ เช่น การฝึก AI สามารถทำให้เว็บเซิร์ฟเวอร์ค้างและไม่ตอบสนองได้
-- **วิธีแก้ปัญหาของผม:** ระบบประมวลผลงานในเบื้องหลังแบบ asynchronous โดยใช้ **Queue และ Worker Threads ที่ทำงานเฉพาะทาง** คำขอที่หนักจะถูกส่งไปประมวลผลในเบื้องหลัง ทำให้ผู้ใช้ได้รับการตอบกลับทันที
-- **ผลลัพธ์:** Server หลักยังคงทำงานได้อย่างรวดเร็วและตอบสนองได้ตลอดเวลา นี่คือ **สถาปัตยกรรมระดับ production** ที่ใช้ในแอปพลิเคชันขนาดใหญ่
+* **The Common Problem:** Heavy tasks like training an AI can freeze a web server, making it unresponsive.
+* **My Solution:** An asynchronous background processing system using a **Queue and dedicated Worker Threads**. Heavy requests are offloaded, and the user gets an immediate response.
+* **The Impact:** The main server remains lightning-fast and responsive at all times. This is a **production-grade architecture** used by large-scale applications.
 
 ### 🛡️ Data Sanitization & Validation Pipeline
-- **ปัญหาทั่วไป:** ข้อมูลในโลกจริงมักจะสกปรก ไฟล์ JSON เสียหายหรือค่าที่หายไปสามารถทำให้โปรแกรมล่มได้ง่าย
-- **วิธีแก้ปัญหาของผม:** ระบบจัดการข้อมูลที่ทำงานแบบป้องกันตัว ซึ่งสมมติว่าข้อมูลจะ "สกปรก" ไว้ก่อน มีฟังก์ชันที่สแกนและลบไฟล์ที่เสียหายโดยอัตโนมัติ และ **ตัวโหลดข้อมูลที่ทนทาน** ที่สามารถจัดการกับรูปแบบต่างๆ ได้
-- **ผลลัพธ์:** ระบบมีความทนทานสูงต่อข้อมูลคุณภาพต่ำ ซึ่งเป็นความจริงที่มักถูกมองข้าม แต่สำคัญอย่างยิ่งสำหรับการสร้าง AI ที่เชื่อถือได้
+* **The Common Problem:** Real-world data is messy. Corrupted JSON files or missing values can easily crash a program.
+* **My Solution:** A defensive data pipeline that assumes data will be "dirty." It includes functions to automatically **scan and delete corrupted files** and a **robust data loader** that can handle various formats.
+* **The Impact:** The system is highly tolerant of poor-quality data, a reality often overlooked but critical for building reliable AI.
 
 ### 💾 Hybrid Resource Management System
-- **ปัญหาทั่วไป:** โมเดล AI ที่ล้ำสมัยมีขนาดใหญ่มากและต้องใช้ฮาร์ดแวร์ราคาแพง (โดยเฉพาะ GPU VRAM)
-- **วิธีแก้ปัญหาของผม:** ระบบไฮบริดที่ปรับปรุงการใช้ทรัพยากรทั้งในระดับฮาร์ดแวร์และซอฟต์แวร์ โดยใช้ **4-bit quantization**, **GPU offloading**, และการจัดการหน่วยความจำ
-- **ผลลัพธ์:** สิ่งนี้ช่วยให้ผมสามารถฝึกและรันโมเดลที่ปกติจะต้องใช้เซิร์ฟเวอร์ระดับสูง บนฮาร์ดแวร์ทั่วไปได้ ซึ่งแสดงให้เห็นถึงทักษะการทำ optimization ที่ลึกซึ้ง
+* **The Common Problem:** State-of-the-art AI models are massive and require expensive hardware (especially GPU VRAM).
+* **My Solution:** A hybrid system that optimizes resource usage at both hardware and software levels, using **4-bit quantization**, **GPU offloading**, and aggressive memory management.
+* **The Impact:** This allows me to train and run models that would normally require a high-end server on consumer-grade hardware, showcasing deep optimization skills.
 
 ### 🧠 Explainable AI (XAI) System
-- **ปัญหาทั่วไป:** โครงข่ายประสาทเทียมมักเป็น "กล่องดำ" ทำให้ยากที่จะเชื่อถือการตัดสินใจของมัน
-- **วิธีแก้ปัญหาของผม:** ผมได้รวมเฟรมเวิร์ก **SHAP (SHapley Additive exPlanations)** เข้ากับเอ็นจิ้นการเทรดของผมโดยตรง
-- **ผลลัพธ์:** สิ่งนี้ให้คำอธิบายที่ชัดเจนสำหรับทุกสัญญาณการเทรด โดยแสดงให้เห็นว่าคุณสมบัติของตลาดใดที่มีอิทธิพลต่อการตัดสินใจของ AI มากที่สุด มันเป็นคุณสมบัติที่สำคัญสำหรับการสร้างความน่าเชื่อถือและการดีบัก
+* **The Common Problem:** Neural networks are often "black boxes," making it hard to trust their decisions.
+* **My Solution:** I integrated the **SHAP (SHapley Additive exPlanations)** framework directly into my trading engine.
+* **The Impact:** This provides a clear explanation for every trade signal, showing which market features most influenced the AI's decision. It’s a critical feature for building trust and debugging.
 
 ### 🎯 The Robust Training Pipeline
-- **ปัญหาทั่วไป:** การฝึกโมเดลนั้นง่าย แต่การฝึกให้มันเสถียรและทำงานได้ดีนั้นยาก
-- **วิธีแก้ปัญหาของผม:** ระบบการฝึกที่สมบูรณ์แบบที่รวมถึง **callbacks อัตโนมัติ** (เช่น `EarlyStopping`), **Adversarial Validation** เพื่อเลือกคุณสมบัติที่เสถียร, และ **การปรับจูน hyperparameter อัตโนมัติ**
-- **ผลลัพธ์:** ผลที่ได้คือโมเดลที่ไม่ได้แค่ "ฝึกได้" แต่ **ได้รับการฝึกมาอย่างมีประสิทธิภาพ, เสถียร, และน่าเชื่อถือ** ในสถานการณ์จริง
+* **The Common Problem:** Training a model is easy, but training it to be stable and perform well is hard.
+* **My Solution:** A complete training ecosystem that includes **automated callbacks** (like `EarlyStopping`), **Adversarial Validation** to select stable features, and **automatic hyperparameter tuning**.
+* **The Impact:** The result is a model that isn't just "trained," but is **trained to be effective, stable, and reliable** in real-world scenarios.
 
 ### 🔑 Fallback & Failsafe System
-- **ปัญหาทั่วไป:** ไฟล์หรือโมดูลที่หายไปสามารถทำให้โปรแกรมทั้งหมดล่มได้
-- **วิธีแก้ปัญหาของผม:** นอกจากบล็อก `try-except` ทั่วไปแล้ว ผมยังออกแบบระบบที่มี **fallback อัจฉริยะ** หากส่วนประกอบที่ซับซ้อนล้มเหลว มันจะสลับไปใช้วิธีสำรองที่ง่ายกว่าและเชื่อถือได้มากกว่าโดยอัตโนมัติ
-- **ผลลัพธ์:** โค้ดถูกออกแบบมาให้ "ทนทานต่อความล้มเหลว" มีความซ้ำซ้อนในตัวที่ช่วยให้มันยังคงทำงานได้แม้บางส่วนจะหายไปหรือเสียหาย
+* **The Common Problem:** A missing file or module can cause an entire program to crash.
+* **My Solution:** Beyond standard `try-except` blocks, I've designed the system with **intelligent fallbacks**. If a complex component fails, it automatically switches to a simpler, more reliable backup method.
+* **The Impact:** The code is designed to be "anti-fragile." It has built-in redundancy that allows it to continue functioning even when parts of it are missing or broken.
 
 ---
 
-## 🚀 อะไรทำให้พอร์ตโฟลิโอนี้พิเศษ?
+## 🚀 What Makes This Portfolio Special?
 
-- **การแสดงผลงานที่นำไปใช้ได้จริง:** นี่ไม่ใช่แค่โมเดลเชิงทฤษฎี แต่เป็นระบบที่ถูกรวมเข้าด้วยกันอย่างสมบูรณ์ซึ่งออกแบบมาเพื่อแก้ปัญหาในโลกจริงที่ซับซ้อน
-- **ความเป็นเลิศทางวิศวกรรม:** ให้ความสำคัญอย่างลึกซึ้งกับการสร้างซอฟต์แวร์ที่ทนทาน, มีประสิทธิภาพ และเสถียร ด้วยระบบขั้นสูงสำหรับการจัดการข้อผิดพลาด, การจัดการทรัพยากร, และการตรวจสอบข้อมูล
-- **นวัตกรรมจากนักพัฒนาวัยเยาว์:** โปรเจกต์ทั้งหมดและสถาปัตยกรรมที่อยู่เบื้องหลังเป็นผลงานต้นฉบับที่สร้างขึ้นตั้งแต่ต้น ซึ่งแสดงให้เห็นถึงความหลงใหลในการผลักดันขีดจำกัดของ AI
-- **แนวคิดสุดล้ำที่นำมาใช้จริง:** แสดงให้เห็นว่าเทคนิคขั้นสูงอย่าง **Multi-Agent Systems, Reinforcement Learning, LLMs, GNNs, และ RAG** สามารถนำมาประกอบกันเพื่อสร้างแอปพลิเคชันที่ทรงพลังได้อย่างไร
+* **A Showcase of Practical Application:** These aren't just theoretical models; they are fully integrated systems designed to solve complex, real-world problems.
+* **Engineering Excellence:** A deep focus on creating robust, efficient, and stable software with advanced systems for error handling, resource management, and data validation.
+* **Innovation from a Young Mind:** All projects and their underlying architectures are original works created from scratch, demonstrating a passion for pushing the boundaries of AI.
+* **Cutting-Edge Concepts in Action:** See how advanced techniques like **Multi-Agent Systems, Reinforcement Learning, LLMs, GNNs, and RAG** can be combined to create powerful applications.
 
-> 🌟 คอยติดตามข่าวสาร! โปรเจกต์เหล่านี้มีการพัฒนาอย่างต่อเนื่อง และผมวางแผนที่จะปล่อยโค้ดและ Assets บางส่วนให้ชุมชนได้เรียนรู้และทดลองในอนาคต
-
----
-
-### 🌐 ติดต่อและเชื่อมต่อ
-
-- **อีเมล:** yoglawm644@gmail.com
-- **เพจ Facebook:** [FWK Multiverse](https://www.facebook.com/FWKMultiverse/)
-- **Twitter:** [@FWK_Multiverse](https://x.com/FWK_Multiverse)
+> 🌟 Stay tuned for updates! These projects are constantly evolving, and I plan to release partial code and assets for the community to learn from and experiment with in the future.
 
 ---
 
-### 🔖 แท็กที่แนะนำสำหรับ GitHub
+### 🌐 Contact & Connect
+
+- **Email:** yoglawm644@gmail.com
+- **Facebook:** [FWK Multiverse](https://www.facebook.com/FWKMultiverse/)
+- **Twitter:** [@FWK_Multiverse](https://x.com/FWK_Multiverse/)
+
+---
+
+### 🔖 Suggested Tags for GitHub Visibility
 
 `AI` `Machine-Learning` `Deep-Learning` `Reinforcement-Learning` `Multi-Agent` `Trading` `Finance` `Numerai` `Game-Development` `Python` `Transformers` `GNN` `LLM` `RAG` `XAI` `Fintech` `Game-AI`
