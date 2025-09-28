@@ -8,7 +8,8 @@
 
 Welcome to my personal AI project portfolio! I'm a 16-year-old AI enthusiast exploring automated trading, finance prediction, and multi-agent game development.  
 
-> ⚠️ Note: This portfolio provides **overview-level information only**. Technical details and implementation steps are not included.
+> ⚠️ Note: This portfolio provides **overview-level information only**.  
+> ⚠️ No code or files are published here — all projects are **original works** created from scratch.
 
 ---
 
@@ -30,7 +31,7 @@ A modular automated AI trading framework for Forex & Crypto with three main comp
 - Risk Agent: Portfolio risk management  
 - 8 Neural Network models for decision-making and news/graph embeddings  
 
-> ⚠️ This is a **summary of the system**, not full implementation details.
+> ⚠️ Summary only; **no code or implementation details are shared**.
 
 ---
 
@@ -54,7 +55,7 @@ A framework for Numerai competitions combining 10 AI models into a diversified e
 - GNN + Transformer for relational & attention-based learning  
 - Multi-Agent RL model for blending predictions  
 
-> ⚠️ Overview-level information only; details of training and model integration are not included.
+> ⚠️ Overview only; all models and experiments are original creations and **no code is provided**.
 
 ---
 
@@ -83,7 +84,7 @@ An AI swarm for end-to-end game development across Roblox, Godot, Unity, and Unr
 - Support additional languages & engines  
 - Further multi-modal or collaborative AI enhancements  
 
-> ⚠️ High-level summary; implementation specifics are not provided.
+> ⚠️ High-level summary only; **no files or source code are included**.
 
 ---
 
@@ -92,5 +93,6 @@ An AI swarm for end-to-end game development across Roblox, Godot, Unity, and Unr
 - Focus on **learning and exploration**, not deployment steps  
 - Modular, robust systems for AI experimentation  
 - Projects illustrate multi-agent systems, RL, LLMs, GNNs, and RAG in action  
+- All work is **original, created from scratch, and no code is published**
 
 > 🔗 Exploring AI, trading, and game development at 16 — always learning and experimenting.
