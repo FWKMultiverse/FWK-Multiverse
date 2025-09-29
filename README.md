@@ -6,12 +6,19 @@
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![AI](https://img.shields.io/badge/AI-MultiAgent-green)
 ![RL](https://img.shields.io/badge/Reinforcement-Learning-orange)
-![Status](https://img.shields.io/badge/Code-Private-red)
+![LLM](https://img.shields.io/badge/LLM-CodeGen-purple)
+![GNN](https://img.shields.io/badge/Graph-NeuralNetwork-purple)
+![RAG](https://img.shields.io/badge/RAG-VectorSearch-red)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Framework-red)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-Framework-orange)
-![Docker](https://img.shields.io/badge/Docker-Sandbox-blue)
 ![Optuna](https://img.shields.io/badge/Optuna-Hyperparameter-lightgrey)
-![GNN](https://img.shields.io/badge/Graph-NeuralNetwork-purple)
+![Docker](https://img.shields.io/badge/Docker-Sandbox-blue)
+![AsyncIO](https://img.shields.io/badge/AsyncIO-Concurrent-lightblue)
+![Multi-Agent](https://img.shields.io/badge/Multi-Agent-System-green)
+![Trading](https://img.shields.io/badge/Trading-Forex/Crypto-yellow)
+![Numerai](https://img.shields.io/badge/Numerai-Challenge-darkblue)
+![Private](https://img.shields.io/badge/Code-Private-red)
+![Research](https://img.shields.io/badge/Research-Level-purple)
 
 ---
 
