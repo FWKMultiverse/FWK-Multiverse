@@ -7,18 +7,32 @@
 ![AI](https://img.shields.io/badge/AI-MultiAgent-green)
 ![RL](https://img.shields.io/badge/Reinforcement-Learning-orange)
 ![Status](https://img.shields.io/badge/Code-Private-red)
+![PyTorch](https://img.shields.io/badge/PyTorch-Framework-red)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Framework-orange)
+![Docker](https://img.shields.io/badge/Docker-Sandbox-blue)
+![Optuna](https://img.shields.io/badge/Optuna-Hyperparameter-lightgrey)
+![GNN](https://img.shields.io/badge/Graph-NeuralNetwork-purple)
 
 ---
 
-Welcome!  
-This repository is a **portfolio of personal AI projects** I’ve built independently.  
-I am **16 years old** with formal education ending at grade 9, but I’ve followed my curiosity and passion to create AI systems that cover **trading, data science competitions, and multi-agent game development**.  
+## 🌟 Introduction
 
-⚠️ **Important Notes**:  
-- No source code or implementation details are included here.  
-- All work has been created from scratch.  
-- This document is a **high-level overview**, not a tutorial or technical deep-dive.  
-- In the future, I may open-source smaller side projects, but **the core codebase will remain private**.  
+Welcome to my portfolio!  
+I’m **16 years old**, with formal education ending at grade 9, yet my passion for AI has pushed me to create ambitious projects that bridge **trading, finance competitions, and AI-assisted game development**.  
+
+Instead of starting small, I jumped directly into building **full-scale systems** with resilience, creativity, and research-level features. This repository is not about sharing raw code — but about presenting the **vision, architecture, and philosophy** behind my work.  
+
+⚠️ **Important Notes**  
+- No source code is shared here.  
+- All systems are original and built independently.  
+- This is a **high-level overview**, not a tutorial or implementation guide.  
+- Future projects may open-source selected components, but **core codebases remain private**.  
+
+---
+
+# 🏷️ Topics & Tags
+`AI` `Reinforcement Learning` `Multi-Agent Systems` `LLM` `GNN` `RAG` `Trading AI`  
+`Numerai` `Game Development AI` `XAI` `AutoML` `Robust Systems` `AI Research`  
 
 ---
 
@@ -184,12 +198,35 @@ Together, this mimics an **Agile dev team** loop (build → test → feedback �
 
 ---
 
-# 🔮 Final Notes
+# 🏆 Project Highlights
 
-- These projects are a reflection of **my passion and need to create**.  
-- I’m only **16 years old** but I believe in learning by building.  
-- Code is **kept private** to protect originality and IP.  
-- More projects will follow — and some may be released publicly in the future.  
+- ✅ **Production-Grade AI Trading System** (28 days).  
+- ✅ **Competition-Ready Numerai AI** (6 days).  
+- ✅ **Research-Level Game Development AI** (8 days).  
+- 🌐 Multi-Agent Systems with **10+ agents per project**.  
+- 📊 Cutting-edge techniques: RL, LLMs, GNN, RAG, AutoML.  
+- 🛡️ Strong focus on robustness, error handling, and explainability.  
+
+---
+
+# 💡 Vision & Philosophy
+
+I build not just to experiment — but to **push boundaries**.  
+Each project is designed with **practical robustness** and **research depth**, showing that innovation is possible even with limited resources.  
+
+My philosophy:  
+- **Learn by Building** – I skip theory-only and jump into real projects.  
+- **Resilience First** – Systems must survive errors and failures.  
+- **Transparency** – AI should be explainable, not black boxes.  
+- **Future Growth** – Each project builds the foundation for the next.  
+
+---
+
+# 📬 Contact
+
+- 📧 **Email:** [yoglawm644@gmail.com](mailto:yoglawm644@gmail.com)  
+- 🌐 **Facebook Page:** [FWK Multiverse](https://www.facebook.com/FWKMultiverse/)  
+- 🐦 **Twitter/X:** [@FWK_Multiverse](https://x.com/FWK_Multiverse)  
 
 ---
 
@@ -203,7 +240,7 @@ Together, this mimics an **Agile dev team** loop (build → test → feedback �
 
 ---
 
-> Thanks for visiting! 🌟  
+> ⚡ Thanks for visiting!  
 > This portfolio is a **living document** and will continue to grow with each project.  
-> Stay tuned for updates on **Project 3 public release** and beyond.  
+> Stay tuned for updates on **Project 3 public release** and beyond 🚀  
 
