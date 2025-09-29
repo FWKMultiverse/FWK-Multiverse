@@ -1,8 +1,8 @@
 # 🚀 AI Projects Portfolio – by a 16-Year-Old Enthusiast
 
-![GitHub Repo Size](https://img.shields.io/github/repo-size/your-username/your-repo)
-![GitHub stars](https://img.shields.io/github/stars/your-username/your-repo)
-![GitHub license](https://img.shields.io/github/license/your-username/your-repo)
+![GitHub Repo Size](https://img.shields.io/github/repo-size/FWKMultiverse/FWK-Multiverse)
+![GitHub stars](https://img.shields.io/github/stars/FWKMultiverse/FWK-Multiverse)
+![GitHub license](https://img.shields.io/github/license/FWKMultiverse/FWK-Multiverse)
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![AI](https://img.shields.io/badge/AI-MultiAgent-green)
 ![RL](https://img.shields.io/badge/Reinforcement-Learning-orange)
@@ -27,6 +27,17 @@ Instead of starting small, I jumped directly into building **full-scale systems*
 - All systems are original and built independently.  
 - This is a **high-level overview**, not a tutorial or implementation guide.  
 - Future projects may open-source selected components, but **core codebases remain private**.  
+
+---
+
+# 💖 Support Me on GitHub Sponsors
+
+If you enjoy my work and want to support me, you can do so here:  
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-GitHub-green)](https://github.com/sponsors/FWKMultiverse)  
+Or click this link directly: [https://github.com/sponsors/FWKMultiverse](https://github.com/sponsors/FWKMultiverse)  
+
+Your support helps me **upgrade hardware, run AI experiments, and continue building projects**. Every contribution means a lot! 🚀  
 
 ---
 
@@ -242,5 +253,4 @@ My philosophy:
 
 > ⚡ Thanks for visiting!  
 > This portfolio is a **living document** and will continue to grow with each project.  
-> Stay tuned for updates on **Project 3 public release** and beyond 🚀  
-
+> Stay tuned for updates on **Project 3 public release** and beyond 🚀
