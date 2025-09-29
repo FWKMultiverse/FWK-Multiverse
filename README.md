@@ -14,7 +14,7 @@
 ![Optuna](https://img.shields.io/badge/Optuna-Hyperparameter-lightgrey)
 ![Docker](https://img.shields.io/badge/Docker-Sandbox-blue)
 ![AsyncIO](https://img.shields.io/badge/AsyncIO-Concurrent-lightblue)
-![Multi-Agent](https://img.shields.io/badge/Multi-Agent-System-green)
+![MultiAgent](https://img.shields.io/badge/MultiAgent-System-green)
 ![Trading](https://img.shields.io/badge/Trading-Forex/Crypto-yellow)
 ![Numerai](https://img.shields.io/badge/Numerai-Challenge-darkblue)
 ![Private](https://img.shields.io/badge/Code-Private-red)
