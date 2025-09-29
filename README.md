@@ -3,14 +3,12 @@
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/FWKMultiverse/FWK-Multiverse)
 ![GitHub stars](https://img.shields.io/github/stars/FWKMultiverse/FWK-Multiverse)
 ![GitHub license](https://img.shields.io/github/license/FWKMultiverse/FWK-Multiverse)
-
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![AI](https://img.shields.io/badge/AI-MultiAgent-green)
 ![RL](https://img.shields.io/badge/Reinforcement-Learning-orange)
 ![LLM](https://img.shields.io/badge/LLM-CodeGen-purple)
 ![GNN](https://img.shields.io/badge/Graph-NeuralNetwork-purple)
 ![RAG](https://img.shields.io/badge/RAG-VectorSearch-red)
-
 ![PyTorch](https://img.shields.io/badge/PyTorch-Framework-red)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-Framework-orange)
 ![Keras](https://img.shields.io/badge/Keras-DeepLearning-red)
@@ -19,7 +17,6 @@
 ![GaussianProcess](https://img.shields.io/badge/GaussianProcess-ML-lightgrey)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-yellow)
 ![Optuna](https://img.shields.io/badge/Optuna-Hyperparameter-lightgrey)
-
 ![AsyncIO](https://img.shields.io/badge/AsyncIO-Concurrent-lightblue)
 ![Joblib](https://img.shields.io/badge/Joblib-Parallel-lightgreen)
 ![Pandas](https://img.shields.io/badge/Pandas-Dataframe-blue)
@@ -29,12 +26,10 @@
 ![Transformers](https://img.shields.io/badge/Transformers-NLP-blue)
 ![Datasets](https://img.shields.io/badge/Datasets-HuggingFace-lightblue)
 ![Accelerate](https://img.shields.io/badge/Accelerate-Training-purple)
-
 ![Docker](https://img.shields.io/badge/Docker-Sandbox-blue)
 ![MultiAgent](https://img.shields.io/badge/MultiAgent-System-green)
 ![Trading](https://img.shields.io/badge/Trading-Forex/Crypto-yellow)
 ![Numerai](https://img.shields.io/badge/Numerai-Challenge-darkblue)
-
 ![Private](https://img.shields.io/badge/Code-Private-red)
 ![Research](https://img.shields.io/badge/Research-Level-purple)
 
