@@ -15,7 +15,7 @@
 ![LightGBM](https://img.shields.io/badge/LightGBM-ML-green)
 ![CatBoost](https://img.shields.io/badge/CatBoost-ML-blue)
 ![GaussianProcess](https://img.shields.io/badge/GaussianProcess-ML-lightgrey)
-![Scikit-Learn](https://imgshields.io/badge/Scikit--Learn-ML-yellow)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-yellow)
 ![Optuna](https://img.shields.io/badge/Optuna-Hyperparameter-lightgrey)
 ![AsyncIO](https://img.shields.io/badge/AsyncIO-Concurrent-lightblue)
 ![Joblib](https://img.shields.io/badge/Joblib-Parallel-lightgreen)
