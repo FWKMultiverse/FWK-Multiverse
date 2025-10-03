@@ -7,7 +7,7 @@
 ![AI](https://img.shields.io/badge/AI-MultiAgent-green)
 ![RL](https://img.shields.io/badge/Reinforcement-Learning-orange)
 ![LLM](https://img.shields.io/badge/LLM-CodeGen-purple)
-![GNN](https://img.shields.io/badge/Graph-NeuralNetwork-purple)
+![GNN](https://img.shields.io/badge/GNN-GraphNeuralNetwork-purple)
 ![RAG](https://img.shields.io/badge/RAG-VectorSearch-red)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Framework-red)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-Framework-orange)
@@ -37,17 +37,17 @@
 
 ## 🌟 Introduction
 
-Welcome to my portfolio. I'm a 16-year-old self-taught AI developer with a formal education up to grade 9. My journey is driven by a singular passion: to build complex, intelligent systems that solve real-world problems. Instead of following a traditional learning path, I dive headfirst into creating full-scale, resilient, and research-level AI systems.
+Welcome to my portfolio. I'm a **16-year-old self-taught AI developer** with a formal education up to grade 9. My journey is driven by a singular passion: to build **complex, intelligent systems** that solve real-world problems. Instead of following a traditional learning path, I dive headfirst into creating **full-scale, resilient, and research-level AI systems**.
 
-This document is not merely a list of projects; it's a testament to my architectural philosophy, my problem-solving approach, and my vision for the future of AI. The code for these projects remains private, as they represent my core intellectual property. However, the detailed descriptions here aim to provide a transparent and comprehensive look into the technical depth of my work.
+This document is not merely a list of projects; it's a testament to my architectural philosophy, my problem-solving approach, and my vision for the future of AI. The code for these projects remains **private**, as they represent my core intellectual property. However, the detailed descriptions here aim to provide a transparent and comprehensive look into the technical depth of my work.
 
-⚠️ **Important Note:** All systems presented here are original concepts, architected and built independently by me. This is a high-level overview intended for technical evaluation, not an implementation guide.
+⚠️ **Important Note:** All systems presented here are **original concepts**, architected and built independently by me. This is a high-level overview intended for technical evaluation, not an implementation guide.
 
 ---
 
 ## 💖 A Call for Support: Powering the Next Wave of AI Innovation
 
-To push the boundaries of what's possible, especially in fields like Reinforcement Learning and Large Language Models, computational power isn't just a facilitator—it's a fundamental requirement. Currently, my progress is constrained by the limitations of my existing hardware.
+To push the boundaries of what's possible, especially in fields like **Reinforcement Learning** and **Large Language Models**, computational power isn't just a facilitator—it's a fundamental requirement. Currently, my progress is constrained by the limitations of my existing hardware.
 
 **As a newcomer, I've poured my efforts into designing these advanced architectures, but due to significant resource constraints—specifically low GPU power and insufficient RAM—I'm currently unable to run these complex systems to generate and showcase concrete results.** The theory and architecture are solid, but the practical execution is bottlenecked.
 
@@ -93,10 +93,10 @@ Each project is detailed extensively below.
 **Core Technologies:** Python, Async I/O, Multi-Agent Reinforcement Learning (MARL), Transformers, GNN, Flask, SHAP (XAI)
 
 ### 📝 In-Depth Project Overview
-This system is an end-to-end, fully automated AI trading platform designed for the high-frequency, chaotic environments of Forex and Cryptocurrency markets. The core architectural philosophy is modularity and resilience, creating a system that can operate 24/7 with minimal human intervention. It's structured into a robust three-tier architecture:
+This system is an **end-to-end, fully automated AI trading platform** designed for the high-frequency, chaotic environments of Forex and Cryptocurrency markets. The core architectural philosophy is modularity and resilience, creating a system that can operate 24/7 with minimal human intervention. It's structured into a robust three-tier architecture:
 
 -   **Tier 1: Fetcher (`fetcher.py`)**: The system's sensory organ. This asynchronous module is responsible for ingesting a wide array of data streams in real-time. It doesn't just pull price data; it gathers economic news, scrapes social media sentiment, and queries Google Search trends to gauge market psychology. Its design is hyper-focused on reliability.
--   **Tier 2: AI Server (`AIServer.py`)**: The central nervous system. Built on Flask, this web server acts as the command and control center. It manages a sophisticated asynchronous task queue, ensuring that requests for trading signals and commands to retrain models are handled gracefully without blocking critical operations.
+-   **Tier 2: AI Server (`AIServer.py`)**: The central nervous system. Built on **Flask**, this web server acts as the command and control center. It manages a sophisticated asynchronous task queue, ensuring that requests for trading signals and commands to retrain models are handled gracefully without blocking critical operations.
 -   **Tier 3: AI Engine (`AIEngine.py`)**: The brain of the operation. It takes the processed data from the Fetcher, performs deep analysis, and leverages a society of specialized AI agents to generate a final, high-conviction trading signal.
 
 ### 🤖 Multi-Agent Architecture & Advanced Models
@@ -134,7 +134,7 @@ A trading system is only as good as its uptime. This system was built with a "fa
 **Core Technologies:** Python, LightGBM, CatBoost, GNN, Transformer, LSTM, Autoencoder, Gaussian Processes, Optuna
 
 ### 📝 In-Depth Project Overview
-This project was an intensive effort to build a top-tier system for the Numerai Tournament, a challenge to predict stock market returns from obfuscated data. The strategy was to architect a massively complex **ensemble-of-ensembles** system to maximize predictive power and robustness under a tight deadline.
+This project was an intensive effort to build a top-tier system for the **Numerai Tournament**, a challenge to predict stock market returns from obfuscated data. The strategy was to architect a massively complex **ensemble-of-ensembles** system to maximize predictive power and robustness under a tight deadline.
 
 -   **`data_converter.py`**: A highly efficient pre-processing script that transforms raw Parquet data into a more manageable Era-grouped JSON format, drastically speeding up data loading.
 -   **`AInumerai_Ultra.py`**: The monolithic core of the project. It orchestrates the entire pipeline: feature engineering, parallel training of over a dozen model configurations, hyperparameter optimization, and multi-layer ensembling.
