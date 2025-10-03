@@ -37,9 +37,9 @@
 
 ## 🌟 Introduction
 
-Welcome to my portfolio. I am a 16-year-old self-taught AI developer with a formal education up to grade 9. My journey is driven by a singular passion: to build complex, intelligent systems that solve real-world problems. Instead of following a traditional learning path, I dive headfirst into creating full-scale, resilient, and research-level AI systems.
+Welcome to my portfolio. I'm a 16-year-old self-taught AI developer with a formal education up to grade 9. My journey is driven by a singular passion: to build complex, intelligent systems that solve real-world problems. Instead of following a traditional learning path, I dive headfirst into creating full-scale, resilient, and research-level AI systems.
 
-This document is not merely a list of projects; it is a testament to my architectural philosophy, my problem-solving approach, and my vision for the future of AI. The code for these projects remains private, as they represent my core intellectual property. However, the detailed descriptions here aim to provide a transparent and comprehensive look into the technical depth of my work.
+This document is not merely a list of projects; it's a testament to my architectural philosophy, my problem-solving approach, and my vision for the future of AI. The code for these projects remains private, as they represent my core intellectual property. However, the detailed descriptions here aim to provide a transparent and comprehensive look into the technical depth of my work.
 
 ⚠️ **Important Note:** All systems presented here are original concepts, architected and built independently by me. This is a high-level overview intended for technical evaluation, not an implementation guide.
 
@@ -47,14 +47,16 @@ This document is not merely a list of projects; it is a testament to my architec
 
 ## 💖 A Call for Support: Powering the Next Wave of AI Innovation
 
-To push the boundaries of what is possible, especially in fields like Reinforcement Learning and Large Language Models, computational power is not just a facilitator—it is a fundamental requirement. Currently, my progress is constrained by the limitations of my existing hardware.
+To push the boundaries of what's possible, especially in fields like Reinforcement Learning and Large Language Models, computational power isn't just a facilitator—it's a fundamental requirement. Currently, my progress is constrained by the limitations of my existing hardware.
 
-**I am seeking financial support specifically to upgrade my computer.**
+**As a newcomer, I've poured my efforts into designing these advanced architectures, but due to significant resource constraints—specifically low GPU power and insufficient RAM—I'm currently unable to run these complex systems to generate and showcase concrete results.** The theory and architecture are solid, but the practical execution is bottlenecked.
+
+This is precisely why **I'm seeking financial support: to upgrade my computer.**
 
 A more powerful machine, equipped with a high-end GPU, will directly enable me to:
-1.  **Train More Complex Models:** My current setup struggles with the VRAM and processing demands of larger models like those in Project 3 (Multi-Agent LLM). An upgrade would allow for training larger, more capable agents and exploring state-of-the-art architectures.
+1.  **Train More Complex Models:** My current setup struggles with the VRAM and processing demands of larger models. An upgrade would allow for training larger, more capable agents and exploring state-of-the-art architectures.
 2.  **Accelerate Research & Development:** Iteration speed is critical in AI. Faster training cycles mean I can experiment with more hypotheses, fine-tune models more effectively, and ultimately innovate at a much faster pace.
-3.  **Produce Demonstrable Results:** With adequate hardware, I can finally run my systems at their full potential and generate concrete, shareable results—such as live trading performance, Numerai competition rankings, and interactive demos of the game development AI. This moves my work from theoretical architecture to proven application.
+3.  **Produce Demonstrable Results:** With adequate hardware, I can finally run my systems at their full potential and generate concrete, shareable results—such as live trading performance, Numerai competition rankings, and interactive demos. This moves my work from theoretical architecture to proven application.
 
 Your support would be a direct investment in my potential and would be instrumental in unlocking the next stage of my projects. Every contribution, big or small, makes a significant difference.
 
@@ -63,7 +65,7 @@ Your support would be a direct investment in my potential and would be instrumen
 
 ---
 
-# 🏷️ Tags for Visibility & Areas of Interest
+## 🏷️ Tags for Visibility & Areas of Interest
 
 `AI` `Reinforcement Learning` `Multi-Agent Systems` `Large Language Models (LLM)` `Generative AI` `Graph Neural Networks (GNN)` `Retrieval-Augmented Generation (RAG)` `Quantitative Finance` `Algorithmic Trading` `AI for Games` `Explainable AI (XAI)` `AutoML` `Robust Systems` `High-Performance Computing` `AI Research`
 
@@ -72,7 +74,7 @@ Your support would be a direct investment in my potential and would be instrumen
 
 ---
 
-# 📂 Projects Overview
+## 📂 Projects Overview
 
 My work is concentrated into three core projects, each developed with a specific, ambitious goal in mind:
 
@@ -91,37 +93,37 @@ Each project is detailed extensively below.
 **Core Technologies:** Python, Async I/O, Multi-Agent Reinforcement Learning (MARL), Transformers, GNN, Flask, SHAP (XAI)
 
 ### 📝 In-Depth Project Overview
-This system is an end-to-end, fully automated AI trading platform designed for the high-frequency, chaotic environments of Forex and Cryptocurrency markets. The core architectural philosophy is modularity and resilience, creating a system that can operate 24/7 with minimal human intervention. It is structured into a robust three-tier architecture:
+This system is an end-to-end, fully automated AI trading platform designed for the high-frequency, chaotic environments of Forex and Cryptocurrency markets. The core architectural philosophy is modularity and resilience, creating a system that can operate 24/7 with minimal human intervention. It's structured into a robust three-tier architecture:
 
--   **Tier 1: Fetcher (`fetcher.py`)**: The system's sensory organ. This asynchronous module is responsible for ingesting a wide array of data streams in real-time. It doesn't just pull price data; it gathers economic news from financial APIs, scrapes sentiment from social media, and even queries Google Search trends to gauge market psychology. Its design is hyper-focused on reliability, as it is the foundation upon which all decisions are made.
--   **Tier 2: AI Server (`AIServer.py`)**: The central nervous system. Built on Flask, this web server acts as the command and control center. It exposes a secure API for external interaction (e.g., from a trading terminal or a monitoring dashboard). It manages a sophisticated asynchronous task queue, ensuring that requests for trading signals and commands to retrain models are handled gracefully without blocking critical operations.
--   **Tier 3: AI Engine (`AIEngine.py`)**: The brain of the operation. This is where the core intelligence resides. It takes the processed data from the Fetcher, performs deep analysis, and leverages a society of specialized AI agents to generate a final, high-conviction trading signal.
+-   **Tier 1: Fetcher (`fetcher.py`)**: The system's sensory organ. This asynchronous module is responsible for ingesting a wide array of data streams in real-time. It doesn't just pull price data; it gathers economic news, scrapes social media sentiment, and queries Google Search trends to gauge market psychology. Its design is hyper-focused on reliability.
+-   **Tier 2: AI Server (`AIServer.py`)**: The central nervous system. Built on Flask, this web server acts as the command and control center. It manages a sophisticated asynchronous task queue, ensuring that requests for trading signals and commands to retrain models are handled gracefully without blocking critical operations.
+-   **Tier 3: AI Engine (`AIEngine.py`)**: The brain of the operation. It takes the processed data from the Fetcher, performs deep analysis, and leverages a society of specialized AI agents to generate a final, high-conviction trading signal.
 
 ### 🤖 Multi-Agent Architecture & Advanced Models
-The system's intelligence is not monolithic. It is a collaborative **Multi-Agent Reinforcement Learning (MARL)** ecosystem where each agent possesses a unique expertise, mimicking a team of human analysts.
+The system's intelligence is not monolithic. It's a collaborative **Multi-Agent Reinforcement Learning (MARL)** ecosystem where each agent possesses a unique expertise, mimicking a team of human analysts.
 
-1.  **The Macro Agent (The Strategist)**: This agent analyzes the market from a bird's-eye view, operating on high timeframes (H1, H4, Daily). It uses a combination of classical indicators (RSI, MACD) and modern data representations. It consumes **News Embeddings** from a dedicated News Transformer to understand market narratives and **Graph Embeddings** from a GNN to understand inter-asset relationships. Its sole purpose is to determine the overall market regime: Bullish, Bearish, or Consolidation.
+1.  **The Macro Agent (The Strategist)**: Analyzes the market from a bird's-eye view (H1, H4, Daily). It uses classical indicators, **News Embeddings** from a Transformer, and **Graph Embeddings** from a GNN to determine the overall market regime: Bullish, Bearish, or Consolidation.
 
-2.  **The Micro Agent (The Executioner)**: This is the primary decision-maker for market entry and exit, operating on low timeframes (M5, M15). It takes the strategic context from the Macro Agent as a critical input. Its core is a **Transformer Block**, which allows it to analyze time-series price data with an attention mechanism, capturing complex, non-linear patterns that traditional models would miss.
+2.  **The Micro Agent (The Executioner)**: The primary decision-maker for market entry and exit (M5, M15). It takes the strategic context from the Macro Agent as a critical input. Its core is a **Transformer Block**, allowing it to analyze time-series data with an attention mechanism to capture complex patterns.
 
-3.  **The Risk Agent (The Manager)**: This agent's function is purely risk management. It constantly monitors the entire portfolio's state (Profit/Loss, Equity, Max Drawdown). Based on market volatility and current exposure, it dynamically adjusts the position sizing (Lot Size) for trades suggested by the Micro Agent, ensuring catastrophic losses are avoided.
+3.  **The Risk Agent (The Manager)**: Purely for risk management. It constantly monitors the portfolio's state (P/L, Equity, Drawdown) and dynamically adjusts the position sizing for trades suggested by the Micro Agent, ensuring catastrophic losses are avoided.
 
 **Supporting Models:**
--   **Graph Neural Network (GNN) Analyzer**: This model creates a dynamic graph where assets are nodes and their real-time correlations are edges. By analyzing this graph, it generates a "Graph Embedding"—a rich, numerical summary of the entire market's interconnectedness, which is invaluable for the Macro Agent.
--   **News Transformer**: A fine-tuned NLP model that processes news headlines and articles, converting unstructured text into dense "News Embeddings" that capture sentiment and thematic shifts.
+-   **Graph Neural Network (GNN) Analyzer**: Creates a dynamic graph of assets and their correlations, generating a "Graph Embedding"—a rich summary of the market's interconnectedness for the Macro Agent.
+-   **News Transformer**: A fine-tuned NLP model that processes news headlines, converting unstructured text into dense "News Embeddings" that capture sentiment and thematic shifts.
 
 ### 🛡️ Uncompromising Error Handling & Reliability
 A trading system is only as good as its uptime. This system was built with a "fail-safe" mentality.
--   **Retry with Exponential Backoff**: A decorator `@retry_async` wraps all external API calls. If a request fails, it automatically retries with an increasing delay, gracefully handling temporary network issues.
--   **API Cooldown & Quota Management**: The system intelligently tracks API usage. If an API endpoint starts failing repeatedly (e.g., HTTP 429 Too Many Requests), it is placed in a temporary "cooldown" to prevent being blacklisted.
--   **Asynchronous Task Queues**: The AIServer uses `ThreadPoolExecutor` to offload long-running tasks like model training, ensuring the main server thread remains responsive to time-sensitive signal requests.
--   **Request Timeouts**: The `/get_signal` endpoint has a strict timeout. If the AI Engine cannot produce a signal within a set time, it returns an HTTP 504 error, preventing the client from hanging indefinitely.
--   **Automated Data Sanitization**: A startup function, `clean_corrupt_json_files`, scans the data directory for malformed files that could crash the training process and removes them.
+-   **Retry with Exponential Backoff**: A decorator `@retry_async` wraps all external API calls, gracefully handling temporary network issues.
+-   **API Cooldown & Quota Management**: The system intelligently tracks API usage and places failing endpoints in a temporary "cooldown" to prevent being blacklisted.
+-   **Asynchronous Task Queues**: The AIServer uses `ThreadPoolExecutor` to offload long-running tasks like model training, ensuring the main server remains responsive.
+-   **Request Timeouts**: The `/get_signal` endpoint has a strict timeout, preventing the client from hanging indefinitely.
+-   **Automated Data Sanitization**: A startup function, `clean_corrupt_json_files`, scans for and removes malformed files that could crash the training process.
 
 ### 🌟 Unique & Innovative Features
--   **Explainable AI (XAI) with SHAP**: To build trust in the system, I integrated the `shap` library. This allows us to visualize exactly which features (e.g., RSI, news sentiment, a specific asset correlation) contributed most to the Micro Agent's decision to buy or sell.
--   **Advanced Risk Management with Kelly Criterion**: Beyond the Risk Agent, the system includes a `calculate_optimal_lot_size` function based on the Kelly Criterion, a mathematical formula to determine optimal position size to maximize long-term growth.
--   **Multi-Timeframe Fusion**: The seamless integration of analysis from M5 up to Daily charts gives the AI a holistic market perspective, balancing short-term tactics with long-term strategy.
+-   **Explainable AI (XAI) with SHAP**: I integrated the `shap` library to visualize which features contributed most to the Micro Agent's decision to buy or sell.
+-   **Advanced Risk Management with Kelly Criterion**: The system includes a function based on the Kelly Criterion to determine optimal position size and maximize long-term growth.
+-   **Multi-Timeframe Fusion**: Seamless integration of analysis from M5 up to Daily charts gives the AI a holistic market perspective.
 
 ---
 
@@ -132,34 +134,34 @@ A trading system is only as good as its uptime. This system was built with a "fa
 **Core Technologies:** Python, LightGBM, CatBoost, GNN, Transformer, LSTM, Autoencoder, Gaussian Processes, Optuna
 
 ### 📝 In-Depth Project Overview
-This project was an intensive, focused effort to build a top-tier system for the Numerai Tournament, a notoriously difficult challenge where participants must predict stock market returns from obfuscated data. Given the extreme time constraint of just six days, the strategy was to architect a massively complex and diverse **ensemble-of-ensembles** system to maximize predictive power and robustness.
+This project was an intensive effort to build a top-tier system for the Numerai Tournament, a challenge to predict stock market returns from obfuscated data. The strategy was to architect a massively complex **ensemble-of-ensembles** system to maximize predictive power and robustness under a tight deadline.
 
--   **`data_converter.py`**: A highly efficient pre-processing script that transforms the raw Parquet data files provided by Numerai into a more manageable Era-grouped JSON format. This simple step drastically speeds up subsequent data loading and feature engineering.
--   **`AInumerai_Ultra.py`**: The monolithic core of the project. This script orchestrates the entire pipeline: advanced feature engineering, parallel training of over a dozen distinct model configurations, hyperparameter optimization, multi-layer ensembling, and final submission file generation.
--   **`CSVP.py`**: A custom validation tool that simulates Numerai's unique scoring and payout system locally. This allows for rapid iteration and testing of different models without having to wait for the official weekly results.
+-   **`data_converter.py`**: A highly efficient pre-processing script that transforms raw Parquet data into a more manageable Era-grouped JSON format, drastically speeding up data loading.
+-   **`AInumerai_Ultra.py`**: The monolithic core of the project. It orchestrates the entire pipeline: feature engineering, parallel training of over a dozen model configurations, hyperparameter optimization, and multi-layer ensembling.
+-   **`CSVP.py`**: A custom validation tool that simulates Numerai's unique scoring system locally for rapid iteration.
 
 ### 🤖 A Symphony of Models: The Ensemble-of-Ensembles Architecture
-The system's power comes from its diversity, combining models that "think" about the problem in fundamentally different ways.
+The system's power comes from its diversity, combining models that approach the problem in fundamentally different ways.
 
--   **Gradient Boosting Powerhouses (LightGBM & CatBoost)**: These are the workhorses, exceptionally skilled at finding patterns in large tabular datasets. Multiple versions of each are trained on different feature subsets and with different objectives.
--   **Graph Neural Network + Transformer Hybrid**: This innovative model treats all features as nodes in a fully connected graph. The GNN layer learns the relational structure between features, and the output is then fed into a Transformer to learn which features deserve the most "attention" for a given data point.
--   **Temporal Model (LSTM)**: This model processes the data era-by-era, treating it as a time series. It aims to capture temporal dependencies and regime changes that other models might miss.
--   **Unsupervised Feature Extractor (Autoencoder)**: A neural network trained to compress all input features into a small, dense latent space and then reconstruct them. The compressed representation (`autoencoder_feat_`) becomes a powerful new feature for the other models.
--   **Multi-Agent RL Decider**: This agent takes the predictions from the GNN, LGBM, and Temporal models as its "state" and learns an optimal policy (Action) for combining them into a more refined prediction.
+-   **Gradient Boosting Powerhouses (LightGBM & CatBoost)**: The workhorses, skilled at finding patterns in large tabular datasets.
+-   **Graph Neural Network + Transformer Hybrid**: This innovative model treats features as nodes in a graph. The GNN learns the relational structure, and a Transformer learns which features deserve the most "attention".
+-   **Temporal Model (LSTM)**: Processes data era-by-era to capture temporal dependencies and regime changes.
+-   **Unsupervised Feature Extractor (Autoencoder)**: A neural network that compresses input features into a small latent space, creating a powerful new feature for other models.
+-   **Multi-Agent RL Decider**: Takes predictions from the GNN, LGBM, and Temporal models as its "state" and learns an optimal policy for combining them.
 
 **Meta-Models for Final Blending:**
--   **Ridge Regression for Neutralization**: A key technique in Numerai is to create predictions that are uncorrelated with known risk factors. A Ridge model is trained specifically to neutralize the main ensemble's predictions.
--   **Gaussian Process Regressor**: The final, ultimate aggregator. This powerful probabilistic model takes the outputs of *all* other models (including the neutralized one) and produces the final submission, complete with uncertainty estimates.
+-   **Ridge Regression for Neutralization**: A key technique to create predictions that are uncorrelated with known risk factors.
+-   **Gaussian Process Regressor**: The final aggregator. This probabilistic model takes the outputs of *all* other models and produces the final submission with uncertainty estimates.
 
 ### 🛡️ Robustness Under Pressure
--   **Graceful Degradation**: The code checks for the availability of optional, heavy libraries like Dask or Spektral. If they aren't installed, the system automatically falls back to a simpler but still functional mode instead of crashing.
--   **Aggressive Memory Management**: A `reduce_memory_usage` function iterates through every column in the dataset, downcasting data types (e.g., float64 to float32) to drastically reduce RAM consumption, making it possible to run on consumer-grade hardware.
--   **Parallel Seed Training**: The entire training process is wrapped in `multiprocessing`. The system trains the same model architecture on multiple different random seeds simultaneously. This not only speeds up the process but also makes the final averaged result (bagging) much more stable.
+-   **Graceful Degradation**: The code checks for optional heavy libraries. If they aren't installed, the system falls back to a simpler but functional mode instead of crashing.
+-   **Aggressive Memory Management**: A `reduce_memory_usage` function downcasts data types to drastically reduce RAM consumption.
+-   **Parallel Seed Training**: The entire training process is wrapped in `multiprocessing`, training the same model on multiple different random seeds simultaneously to create a more stable final result.
 
 ### 🌟 Competition-Winning Features
--   **Automated Hyperparameter Tuning**: The system uses **Optuna** to intelligently search for the best hyperparameters for LightGBM and CatBoost, and **Keras Tuner** for the neural network models, automating one of the most time-consuming parts of machine learning.
--   **Adversarial Validation**: A clever technique to ensure the model will generalize well. A classifier is trained to distinguish between the training data and the validation data. Features that make this distinction easy are considered "unstable" and are down-weighted or removed.
--   **Purged Time-Series Cross-Validation**: The entire validation strategy is built around respecting the temporal nature of the data, using a strict walk-forward approach with "purging" to prevent any data from the future from leaking into the training of a model.
+-   **Automated Hyperparameter Tuning**: Uses **Optuna** for tree-based models and **Keras Tuner** for neural networks to automate one of the most time-consuming parts of machine learning.
+-   **Adversarial Validation**: A classifier is trained to distinguish between training and validation data. Features that make this distinction easy are considered "unstable" and are down-weighted.
+-   **Purged Time-Series Cross-Validation**: A strict walk-forward validation strategy that prevents any data from the future from leaking into the training of a model.
 
 ---
 
@@ -170,14 +172,14 @@ The system's power comes from its diversity, combining models that "think" about
 **Core Technologies:** Python, PPO-RL, LLMs (Salesforce/codegen-2B-mono), LoRA Fine-Tuning, GNN, RAG, Docker
 
 ### 📝 In-Depth Project Overview
-This is my most ambitious and forward-looking project. It is a self-contained **AI Agent Swarm**, powered by a Large Language Model, designed to function as an autonomous game development assistant. The system can understand an entire codebase, write new code, identify and fix bugs, refactor existing code for better performance, and even contribute to game design. It integrates multiple state-of-the-art AI techniques into a single, cohesive system.
+This is my most ambitious project: a self-contained **AI Agent Swarm**, powered by a Large Language Model, designed to function as an autonomous game development assistant. The system can understand an entire codebase, write new code, fix bugs, refactor existing code, and even contribute to game design.
 
 ### 🤖 An Ecosystem of Specialized LLM Agents
 The foundation is a single, powerful LLM (`Salesforce/codegen-2B-mono`), which is then specialized into a multitude of "expert" agents using efficient fine-tuning techniques.
 
 -   **Core Model Technology**:
-    -   **4-bit Quantization (BitsAndBytes)**: This technique drastically reduces the model's memory footprint, allowing a 2-billion-parameter model to run on consumer GPUs.
-    -   **LoRA (Low-Rank Adaptation)**: An incredibly efficient fine-tuning method. Instead of retraining the entire model, we only train small "adapter" layers, saving immense amounts of time and computational resources.
+    -   **4-bit Quantization (BitsAndBytes)**: Drastically reduces the model's memory footprint, allowing a 2-billion-parameter model to run on consumer GPUs.
+    -   **LoRA (Low-Rank Adaptation)**: An efficient fine-tuning method where only small "adapter" layers are trained, saving immense time and computational resources.
 
 -   **The Agent Swarm (>10 Specialized Agents)**:
     -   **Code Generation & Refinement**: `CodeGeneratorAgent`, `CodeRefinementAgent`, `AutoRefactoringAgent`.
@@ -188,22 +190,22 @@ The foundation is a single, powerful LLM (`Salesforce/codegen-2B-mono`), which i
 
 ### 🛡️ Security-First Error Handling and Code Execution
 Running AI-generated code is inherently risky. This project's most critical feature is its multi-layered security protocol.
--   **Sandboxed Code Execution with Docker**: The absolute cornerstone of safety. Every piece of code generated by an agent is executed inside a heavily restricted, ephemeral **Docker Container**. This container has no network access and is limited in CPU and RAM usage, completely isolating it from the host system and preventing any potential harm.
+-   **Sandboxed Code Execution with Docker**: The cornerstone of safety. Every piece of AI-generated code is executed inside a heavily restricted, ephemeral **Docker Container**. This container has no network access and is limited in CPU and RAM usage, completely isolating it from the host system.
 -   **Multi-layered Security Audits**: Before execution, code undergoes a rigorous automated audit:
     1.  **Static Analysis**: `luacheck` is used to find syntax errors.
-    2.  **Pattern Matching**: Regular expressions scan for dangerous patterns like `os.execute` or `loadstring`.
-    3.  **Vulnerability Scanning**: The code is checked for common vulnerability patterns (e.g., potential for SQL injection, buffer overflows).
+    2.  **Pattern Matching**: Regular expressions scan for dangerous patterns like `os.execute`.
+    3.  **Vulnerability Scanning**: The code is checked for common vulnerability patterns.
 
 ### 🌟 The Research Frontier: Advanced AI Techniques
--   **Knowledge Graph-Augmented LLM**: This is the system's most profound innovation. The entire codebase of a game project is parsed into an **Abstract Syntax Tree (AST)** and then converted into a **Knowledge Graph**. This graph, where functions are nodes and calls are edges, is processed by a GNN (`ProjectGraphMemory`). The resulting graph embedding is injected directly into the LLM's context. This gives the LLM a holistic, structural understanding of the entire project, far beyond just reading text.
--   **Retrieval-Augmented Generation (RAG)**: The system maintains a `VectorizedMemory`—a database of high-quality code snippets from the project, embedded as vectors. When a new task arrives, the relevant agents first perform a similarity search to retrieve the most relevant, high-quality examples. These examples are then provided to the LLM as "inspiration," dramatically improving the quality of the generated code.
--   **Fine-tuning with Reinforcement Learning (PPO)**: The agents are not just trained on static data; they learn through trial and error. The `CodeEvaluator` (running in the secure Docker sandbox) acts as the RL "environment," providing a "reward" signal based on whether the generated code runs, passes tests, and is efficient. The agents are then fine-tuned using **Proximal Policy Optimization (PPO)** to maximize this reward.
--   **Prioritized Experience Replay (PER)**: A sophisticated learning buffer that allows the agents to learn more efficiently by replaying and focusing on the mistakes that were most surprising or led to the biggest errors.
--   **Sequential Fine-tuning Pipeline**: The `main` function is designed as a curriculum. The system can first master Roblox development, then sequentially learn Godot, Unity, and Unreal Engine, allowing a single core model to become a polyglot game development expert.
+-   **Knowledge Graph-Augmented LLM**: The system's most profound innovation. The entire game codebase is parsed into an **Abstract Syntax Tree (AST)** and converted into a **Knowledge Graph**. This graph is processed by a GNN, and the resulting embedding is injected into the LLM's context. This gives the LLM a holistic, structural understanding of the entire project.
+-   **Retrieval-Augmented Generation (RAG)**: The system maintains a `VectorizedMemory` of high-quality code snippets. When a new task arrives, relevant agents perform a similarity search to retrieve the most relevant examples, providing them to the LLM as "inspiration" to dramatically improve the quality of generated code.
+-   **Fine-tuning with Reinforcement Learning (PPO)**: Agents learn through trial and error. The `CodeEvaluator` (running in the secure Docker sandbox) acts as the RL "environment," providing a "reward" based on whether the generated code runs and passes tests. Agents are then fine-tuned using **PPO** to maximize this reward.
+-   **Prioritized Experience Replay (PER)**: A sophisticated learning buffer that allows agents to learn more efficiently by focusing on the mistakes that were most surprising or led to the biggest errors.
+-   **Sequential Fine-tuning Pipeline**: The `main` function is designed as a curriculum, allowing the system to first master Roblox development, then sequentially learn Godot, Unity, and Unreal Engine.
 
 ---
 
-# 💡 Vision & Philosophy
+## 💡 Vision & Philosophy
 
 My approach is to build systems that are not just academically interesting but are architected with the robustness required for real-world application. I believe in learning by building complex, end-to-end projects that force me to solve practical problems in reliability, scalability, and efficiency.
 
@@ -214,9 +216,9 @@ My approach is to build systems that are not just academically interesting but a
 
 ---
 
-# 📬 Contact
+## 📬 Contact
 
-I am actively seeking opportunities and collaborations. Let's connect.
+I'm actively seeking opportunities and collaborations. Let's connect.
 -   📧 **Email:** [yoglawm644@gmail.com](mailto:yoglawm644@gmail.com)
 -   🌐 **Facebook Page:** [FWK Multiverse](https://www.facebook.com/FWKMultiverse/)
 -   🐦 **Twitter/X:** [@FWK_Multiverse](https://x.com/FWK_Multiverse)
