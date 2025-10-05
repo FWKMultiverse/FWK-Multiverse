@@ -7,7 +7,7 @@
 ![AI](https://img.shields.io/badge/AI-MultiAgent-green)
 ![RL](https://img.shields.io/badge/Reinforcement-Learning-orange)
 ![LLM](https://img.shields.io/badge/LLM-CodeGen-purple)
-![GNN](https://img.shields.io/badge/GNN-GraphNeuralNetwork-purple)
+![GNN](https://imgiculos.io/badge/GNN-GraphNeuralNetwork-purple)
 ![RAG](https://img.shields.io/badge/RAG-VectorSearch-red)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Framework-red)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-Framework-orange)
@@ -62,6 +62,18 @@ Your support would be a direct investment in my potential and would be instrumen
 
 [![Sponsor](https://img.shields.io/badge/Sponsor-My_AI_Research_on_GitHub-green)](https://github.com/sponsors/FWKMultiverse)
 **Direct Link to Sponsor:** [https://github.com/sponsors/FWKMultiverse](https://github.com/sponsors/FWKMultiverse)
+
+---
+
+## 📄 Exclusive Blueprints & Data Feeds 🔑
+
+My advanced architectural designs are available as premium blueprints and data products. Accelerate your own research and development with direct access to these expertly conceptualized systems.
+
+| Product Name | Core Focus | Gumroad Link |
+| :--- | :--- | :--- |
+| **The Sentinel Protocol: Production-Grade LLM Agent Security Architecture** | **LLM Security & GNN Context.** The definitive blueprint for deploying auditable, sandboxed LLM coding agents. | [Access Blueprint](https://fwkmultiverse.gumroad.com/l/ejuev) |
+| **The MARL Quant Blueprint: Conceptual Deep Dive** | **Multi-Agent Reinforcement Learning (MARL)** for complex environments (e.g., Financial Markets). | [Access Blueprint](https://fwkmultiverse.gumroad.com/l/jqkbuz) |
+| **FWK AI Trading Data Feed** | **Curated, clean, and real-time financial data feed** optimized for deep learning and quantitative research. | [Access Data Feed](https://fwkmultiverse.gumroad.com/l/cybzpc) |
 
 ---
 
