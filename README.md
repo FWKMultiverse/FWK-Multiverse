@@ -7,7 +7,7 @@
 ![AI](https://img.shields.io/badge/AI-MultiAgent-green)
 ![RL](https://img.shields.io/badge/Reinforcement-Learning-orange)
 ![LLM](https://img.shields.io/badge/LLM-CodeGen-purple)
-![GNN](https://imgiculos.io/badge/GNN-GraphNeuralNetwork-purple)
+![GNN](https://img.shields.io/badge/GNN-GraphNeuralNetwork-purple)
 ![RAG](https://img.shields.io/badge/RAG-VectorSearch-red)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Framework-red)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-Framework-orange)
