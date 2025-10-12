@@ -179,41 +179,54 @@ The system's power comes from its diversity, combining models that approach the 
 
 ## 3️⃣ Project 3: Multi-Agent LLM for Game Development
 
-**Timeline:** 8 Days
-**Level:** Advanced R&D / Research Frontier
-**Core Technologies:** Python, PPO-RL, LLMs (Salesforce/codegen-2B-mono), LoRA Fine-Tuning, GNN, RAG, Docker
+**Timeline:** 8 Days  
+**Level:** Advanced R&D / Research Frontier  
+**Core Technologies:** Python · LLM (Phi-3 Mini 4K-Instruct) · MARL · PPO · GNN (GATv2) · LoRA · RAG · Docker · CodeBERT Embeddings
 
-### 📝 In-Depth Project Overview
-This is my most ambitious project: a self-contained **AI Agent Swarm**, powered by a Large Language Model, designed to function as an autonomous game development assistant. The system can understand an entire codebase, write new code, fix bugs, refactor existing code, and even contribute to game design.
+---
 
-### 🤖 An Ecosystem of Specialized LLM Agents
-The foundation is a single, powerful LLM (`Salesforce/codegen-2B-mono`), which is then specialized into a multitude of "expert" agents using efficient fine-tuning techniques.
+### 🧠 Overview
+**Multiverse v7.2** is an experimental architecture that fuses **Large Language Models**, **Graph Neural Networks**, and **Multi-Agent Reinforcement Learning** into one intelligent framework.  
+The goal is to create an autonomous swarm of coding agents capable of developing, reviewing, and improving entire game projects—essentially a virtual software team that learns from its own feedback.
 
--   **Core Model Technology**:
-    -   **4-bit Quantization (BitsAndBytes)**: Drastically reduces the model's memory footprint, allowing a 2-billion-parameter model to run on consumer GPUs.
-    -   **LoRA (Low-Rank Adaptation)**: An efficient fine-tuning method where only small "adapter" layers are trained, saving immense time and computational resources.
+---
 
--   **The Agent Swarm (>10 Specialized Agents)**:
-    -   **Code Generation & Refinement**: `CodeGeneratorAgent`, `CodeRefinementAgent`, `AutoRefactoringAgent`.
-    -   **Analysis & Critique**: `CodeCriticAgent`, `BugReportGeneratorAgent`, `CodeSummarizationAgent`.
-    -   **Testing & Documentation**: `TestGenerationAgent`, `DocumentationAgent`.
-    -   **Creative & Planning**: `AssetGeneratorAgent`, `GameDesignerAgent`.
-    -   **Knowledge Retrieval**: `CodeQuestionAnsweringAgent`.
+### 🤖 Agent Ecosystem
+The system orchestrates **11 independent agents**, each acting as a specialized expert:
 
-### 🛡️ Security-First Error Handling and Code Execution
-Running AI-generated code is inherently risky. This project's most critical feature is its multi-layered security protocol.
--   **Sandboxed Code Execution with Docker**: The cornerstone of safety. Every piece of AI-generated code is executed inside a heavily restricted, ephemeral **Docker Container**. This container has no network access and is limited in CPU and RAM usage, completely isolating it from the host system.
--   **Multi-layered Security Audits**: Before execution, code undergoes a rigorous automated audit:
-    1.  **Static Analysis**: `luacheck` is used to find syntax errors.
-    2.  **Pattern Matching**: Regular expressions scan for dangerous patterns like `os.execute`.
-    3.  **Vulnerability Scanning**: The code is checked for common vulnerability patterns.
+`CodeGenerator` · `CodeCritic` · `CodeRefinement` · `AutoRefactoring` · `TestGeneration` · `Documentation` · `CodeSummarization` · `BugReportGenerator` · `AssetGenerator` · `GameDesigner` · `CodeQnA`
 
-### 🌟 The Research Frontier: Advanced AI Techniques
--   **Knowledge Graph-Augmented LLM**: The system's most profound innovation. The entire game codebase is parsed into an **Abstract Syntax Tree (AST)** and converted into a **Knowledge Graph**. This graph is processed by a GNN, and the resulting embedding is injected into the LLM's context. This gives the LLM a holistic, structural understanding of the entire project.
--   **Retrieval-Augmented Generation (RAG)**: The system maintains a `VectorizedMemory` of high-quality code snippets. When a new task arrives, relevant agents perform a similarity search to retrieve the most relevant examples, providing them to the LLM as "inspiration" to dramatically improve the quality of generated code.
--   **Fine-tuning with Reinforcement Learning (PPO)**: Agents learn through trial and error. The `CodeEvaluator` (running in the secure Docker sandbox) acts as the RL "environment," providing a "reward" based on whether the generated code runs and passes tests. Agents are then fine-tuned using **PPO** to maximize this reward.
--   **Prioritized Experience Replay (PER)**: A sophisticated learning buffer that allows agents to learn more efficiently by focusing on the mistakes that were most surprising or led to the biggest errors.
--   **Sequential Fine-tuning Pipeline**: The `main` function is designed as a curriculum, allowing the system to first master Roblox development, then sequentially learn Godot, Unity, and Unreal Engine.
+They communicate through a shared policy/value model and a common graph-based memory, forming a closed feedback loop where ideas evolve through critique and refinement.
+
+---
+
+### 🧩 Architectural Highlights
+- **Graph Memory (GATv2):** Transforms parsed AST structures into embeddings that represent logical code relationships.  
+- **LLM Fusion:** Graph embeddings are merged with Phi-3’s hidden states via Multi-Head Attention to inject contextual understanding.  
+- **Reinforcement Learning (PPO):** Each agent improves through reward signals derived from code evaluation performance.  
+- **Vectorized Memory (RAG):** High-quality snippets are stored and retrieved for context-aware generation.  
+- **Secure Execution:** All AI-generated code runs inside an isolated Docker sandbox for safety and evaluation.
+
+---
+
+### ⚙️ System Management & Reliability
+- **Adaptive Resource Control:** Automatic VRAM and precision management for stable training.  
+- **Structured Logging & Recovery:** Comprehensive error tracking with self-healing mechanisms.  
+- **Experience Replay:** Prioritized buffer to focus learning on the most impactful outcomes.  
+- **Curriculum Learning:** Progressive training across different game frameworks (Roblox → Godot → Unity → Unreal).
+
+---
+
+### 🌌 Vision
+This project represents the frontier of autonomous AI development—an AI that doesn’t just generate code, but understands and iterates on its own creations.  
+It’s a step toward self-improving digital engineers capable of complex collaboration within structured creative domains.
+
+---
+
+### 🖼️ Working Principle
+
+![Picture of working principle](./Picture%20of%20working%20principle.png)
+> *Visual representation of the data and feedback flow across the 11-agent ecosystem in Multiverse v7.2.*
 
 ---
 
